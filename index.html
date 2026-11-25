@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b35">
+<meta name="description" content="BICHRI AI, votre assistant intelligent pour les services numériques au Sénégal.">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<title>BICHRI AI — Votre assistant intelligent</title>
+<style>
+:root{--navy:#101b35;--blue:#315fea;--pale:#eef3ff;--ink:#17233d;--muted:#64748b;--line:#e5eaf3;--bg:#f6f8fc}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--navy);color:white;padding:17px 20px;position:sticky;top:0;z-index:2;box-shadow:0 5px 20px #101b3520}
+.top{max-width:1050px;margin:auto;display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#4e7bff,#2447bb);display:grid;place-items:center;font-size:23px;font-weight:800}.brand{font-size:19px;font-weight:800;letter-spacing:.3px}.tag{font-size:12px;color:#bdc9e2;margin-top:2px}.status{margin-left:auto;font-size:12px;color:#bde9d1;display:flex;align-items:center;gap:7px}.dot{width:8px;height:8px;background:#36c783;border-radius:50%}
+main{max-width:1050px;margin:30px auto;padding:0 18px;display:grid;grid-template-columns:300px 1fr;gap:20px}
+.panel,.chat{background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 28px #17233d08}
+.panel{padding:22px;height:max-content}.panel h2{font-size:16px;margin:0 0 7px}.panel p{font-size:13px;color:var(--muted);line-height:1.55;margin:0 0 18px}
+.service{display:flex;gap:11px;align-items:center;padding:12px 10px;border:1px solid var(--line);border-radius:13px;margin:9px 0;font-size:13px;font-weight:650;background:#fff;cursor:pointer;text-align:left;width:100%;color:var(--ink)}
+.service:hover{border-color:#9bb2ff;background:#f8faff}.ico{width:33px;height:33px;border-radius:10px;background:var(--pale);display:grid;place-items:center;font-size:17px;flex-shrink:0}
+.note{margin-top:18px;padding:13px;background:#f7f9ff;border-radius:13px;color:#53627c;font-size:12px;line-height:1.5}
+.chat{min-height:680px;display:flex;flex-direction:column;overflow:hidden}.welcome{padding:30px 28px 20px;background:linear-gradient(135deg,#f4f7ff,#fff)}.eyebrow{font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue);font-weight:800}.welcome h1{font-size:29px;line-height:1.15;margin:10px 0}.welcome p{margin:0;color:var(--muted);font-size:14px;line-height:1.6;max-width:540px}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.quick button{border:1px solid #dce5ff;background:white;color:#284bb2;border-radius:30px;padding:9px 13px;font-size:12px;font-weight:650;cursor:pointer}
+.messages{padding:20px 24px;flex:1;min-height:270px;max-height:390px;overflow:auto;background:#fff}.msg{max-width:82%;padding:12px 15px;border-radius:16px;margin:10px 0;font-size:14px;line-height:1.55;white-space:pre-wrap}.bot{background:#f0f4fc;border:1px solid #e5ebf6;border-top-left-radius:5px}.user{background:var(--blue);color:white;margin-left:auto;border-top-right-radius:5px}
+.composer{border-top:1px solid var(--line);padding:15px;display:flex;gap:9px;background:white}.composer input{flex:1;min-width:0;border:1px solid #dce3ef;border-radius:13px;padding:13px 14px;font:inherit;font-size:14px;outline:none}.composer input:focus{border-color:#7896ff}.send{border:0;border-radius:13px;background:var(--blue);color:white;font-weight:750;padding:0 20px;cursor:pointer}.fine{font-size:11px;color:#8a96aa;text-align:center;padding:0 12px 13px}
+footer{text-align:center;color:#8994a7;font-size:12px;padding:12px 20px 28px}
+@media(max-width:760px){main{grid-template-columns:1fr;margin:17px auto;gap:14px}.panel{order:2}.chat{min-height:650px}.welcome{padding:24px 20px 18px}.welcome h1{font-size:25px}.messages{padding:16px}.msg{max-width:92%}.status{font-size:0}.status .dot{font-size:initial}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="logo">B</div><div><div class="brand">BICHRI AI</div><div class="tag">Votre assistant intelligent • BICHRI ASSISTANCE</div></div><div class="status"><span class="dot"></span> Démonstration</div></div></header>
+<main>
+<aside class="panel">
+<h2>Nos services</h2><p>Des solutions numériques pratiques pour les particuliers et les entreprises au Sénégal.</p>
+<button class="service" data-prompt="Je souhaite créer une publicité pour mon activité."><span class="ico">📣</span>Publicité digitale</button>
+<button class="service" data-prompt="J'ai besoin d'un flyer ou d'une affiche."><span class="ico">🎨</span>Flyers et affiches</button>
+<button class="service" data-prompt="Aidez-moi à rédiger un CV ou une lettre professionnelle."><span class="ico">📄</span>CV et documents</button>
+<button class="service" data-prompt="Je veux créer un catalogue numérique de mes produits."><span class="ico">🛍️</span>Catalogues numériques</button>
+<button class="service" data-prompt="Je veux apprendre à utiliser l'intelligence artificielle pour mon activité."><span class="ico">🤖</span>Conseils IA</button>
+<button class="service" data-prompt="Je veux créer un script pour une vidéo publicitaire IA."><span class="ico">🎬</span>Scripts vidéo IA</button>
+<div class="note"><strong>Notre engagement</strong><br>Un accompagnement simple, sérieux et adapté à votre besoin. Français et wolof selon votre préférence.</div>
+</aside>
+<section class="chat">
+<div class="welcome"><div class="eyebrow">Bienvenue chez BICHRI ASSISTANCE</div><h1>Bonjour ! Comment puis-je vous aider ? 👋</h1><p>Présentez-moi votre besoin. Je peux vous orienter vers nos services et vous aider à préparer votre projet numérique.</p>
+<div class="quick"><button data-prompt="Présentez-moi vos services.">Découvrir les services</button><button data-prompt="Je suis commerçant et je veux attirer plus de clients.">Développer mon commerce</button><button data-prompt="Je veux obtenir un devis pour un service.">Demander un devis</button></div>
+</div>
+<div class="messages" id="messages" aria-live="polite"><div class="msg bot">Bienvenue ! 😊 Je suis l'assistant de démonstration de BICHRI AI.<br><br>Dites-moi ce que vous souhaitez faire, et je vous guiderai vers le service adapté.</div></div>
+<form class="composer" id="form"><input id="input" autocomplete="off" placeholder="Écrivez votre message ici…" aria-label="Votre message"><button class="send" type="submit">Envoyer ➤</button></form>
+<div class="fine">Prototype de démonstration — les réponses automatiques ne sont pas encore connectées à un moteur IA.</div>
+</section>
+</main>
+<footer>© BICHRI ASSISTANCE • BICHRI AI</footer>
+<script>
+const messages=document.getElementById('messages'), input=document.getElementById('input');
+function add(text,who){const d=document.createElement('div');d.className='msg '+who;d.textContent=text;messages.appendChild(d);messages.scrollTop=messages.scrollHeight}
+function reply(t){const s=t.toLowerCase();if(s.includes('service'))return "BICHRI ASSISTANCE propose notamment : publicité digitale, flyers et affiches, rédaction de CV et documents, catalogues numériques, conseils en IA, scripts vidéo et accompagnement commercial. Quel service vous intéresse ?";
+if(s.includes('devis')||s.includes('prix')||s.includes('tarif'))return "Avec plaisir ! Pour préparer une estimation adaptée, indiquez le service souhaité, le résultat attendu et votre délai. Les tarifs seront confirmés par BICHRI ASSISTANCE après étude de votre demande.";
+if(s.includes('commerce')||s.includes('client')||s.includes('vente'))return "Nous pouvons vous aider à mieux présenter vos produits, préparer des publications WhatsApp et Facebook, créer un visuel publicitaire et organiser un petit catalogue. Quel type de commerce gérez-vous ?";
+if(s.includes('cv')||s.includes('lettre')||s.includes('document'))return "Nous pouvons vous accompagner dans la rédaction d'un CV, d'une lettre de motivation ou d'un document professionnel. De quel document avez-vous besoin ?";
+if(s.includes('flyer')||s.includes('affiche')||s.includes('visuel'))return "Pour préparer votre flyer, dites-moi le nom de votre activité, le produit ou service à promouvoir, les informations à afficher et le style souhaité.";
+if(s.includes('wolof'))return "Waaw, mën nanu waxtaan ci wolof. Lan nga bëgg nu la dimbali ci ?";
+return "Merci pour votre message ! Pour mieux vous orienter, pouvez-vous préciser votre activité et ce que vous souhaitez obtenir ? Je peux vous aider pour la publicité, les flyers, les documents, les catalogues ou les projets IA."}
+function send(t){t=t.trim();if(!t)return;add(t,'user');input.value='';setTimeout(()=>add(reply(t),'bot'),250)}
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();send(input.value)});
+document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>send(b.dataset.prompt)));
+if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js').catch(err => console.warn('Service worker non enregistré', err))); }
+</script>
+</body></html>
